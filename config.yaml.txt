@@ -1,0 +1,31 @@
+logging:
+
+    type: syslog
+
+    level: log_debug
+
+libfuse:
+
+    attribute-expiration-sec: 240
+
+    entry-expiration-sec: 240
+
+    negative-entry-expiration-sec: 120
+
+file_cache:
+
+    path: /mnt/resource/blobfusetmp
+
+    timeout-sec: 120
+
+azstorage:
+
+    account-name: teststorageaccount
+
+    sas: ?sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2024-07-18T01:10:33Z&st=2023-07-17T17:10:33Z&spr=https,http&sig=MLSualJk%2F4umkTrqVJb%24MYtjczJFb0DT1%2BqNv4MRg%3D
+
+    mode: sas
+
+    container: testcontainer
+
+    virtual-directory: true
